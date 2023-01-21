@@ -1,0 +1,363 @@
+/* importar letra*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&display=swap');
+
+
+/* Variable */
+:root {
+    /* Variables de colores */
+    --amarillo: #EAC926;
+    --azul: #03264C;
+    --celeste: #1259c3;
+    --gris-oscuro: #666;
+    --gris-claro: #ebebeb;
+    --verde: #39b54a; 
+    /* Fuentes */
+    --fuente: 'Roboto', sans-serif;
+    /* Tamaños tipográficos */
+    --parrafos: 12px;
+    --titulos: 22px;
+    --precio: 18px;
+    --descuento: 16px;
+    --descripcion: 14px;
+
+}
+
+
+
+/* ---------Generales--------- */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--gris-claro);
+    font-family: var(--fuente);
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+
+/* ---------HEADER STAR---------*/
+.main-header {
+    background-color: var(--amarillo);
+    width: 100%;
+    padding: 20px;
+}
+
+.main-header-top-bar {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.main-header a {
+    text-decoration: none;
+    color: var(--azul);
+    font-size: 0.9rem;
+}
+
+
+.main-header a.main-header-top-bar__logo {
+    min-width: 9rem;
+    display: flex;
+    align-items: flex-start;
+}
+
+.main-header a.main-header-top-bar__logo img {
+    object-fit: cover;
+}
+
+.input-group {
+    display: flex;
+    flex-grow: 0.5;
+    justify-content: center;
+    height: 1.9rem;
+}
+
+.main-header-top-bar .input-group input {
+   max-width:  7.8rem;
+   border: none;
+   border-radius: 0.2rem 0 0 0.2rem;
+   margin-left: 0.36rem;
+   outline: none;
+}
+
+
+.input-group input::placeholder {
+    padding: 0.5rem;
+    font-size: 0.8rem;
+    color: var(--gris-oscuro);
+    font-weight: 500;
+}
+
+
+.input-group__icon {
+    display: block;
+    background-color: white;
+    width: 1.76rem;
+    border-style: none;
+    border-left: 0.1em solid var(--gris-claro);
+    border-radius: 0 0.2rem 0.2rem 0;
+}
+
+.copy-header {
+    font-weight: 400;
+    text-align: center;
+    font-size: 0.8rem;
+    margin: 0.9rem auto;
+}
+
+.hambuerguer-button {
+    background-color: var(--azul);
+    color: white;
+    max-width: 3rem;
+    max-height: 2.5rem;
+    padding: 15px 0;
+    border-radius: 8px; 
+    font-size: 1.1rem;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-header-bottom-bar ul{
+    display: none;
+    list-style: none;
+    margin: 0;
+}
+
+/* ---------HEADER END--------- */
+
+/* ---------SECCION---------*/
+
+main section.seccion__productos {
+    width: 90%;
+    margin: 0px auto;
+    display: flex;
+    flex-direction: column;
+}
+
+main div.banner img {
+    width: 100%;
+}
+
+/* ---------PRODUCT SECCION STAR---------*/
+
+main.home__productos h4.seccion__productos--titulo {
+    font-size: var(--titulos);
+    color: var(--gris-oscuro);
+    width: 90%;
+    margin: auto;
+}
+
+
+main section.seccion__productos article {
+    margin: 10px 0;
+    background-color: white;
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);   
+}
+
+main section.seccion__productos article div.seccion__productos-image img {
+    width: 100%;
+}
+
+main section.seccion__productos article div.seccion__productos--descripcion {
+    border-top: 1px solid var(--gris-claro);
+    padding: 15px;
+    position: relative;
+}
+
+
+
+
+section.seccion__productos article div.seccion__productos--descripcion div.logo__de__envio i {
+    display: block;
+    font-size: 1rem;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid var(--verde);
+    color: var(--verde);
+    background-color: #FFF;
+    border-radius: 50%;
+    position: absolute;
+    right: 20px;
+    top: -15px;
+  }
+
+section.seccion__productos article div.seccion__productos--descripcion div {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+section.seccion__productos article div.seccion__productos--descripcion p.price {
+    font-size: var(--precio);
+    margin-right: 1.5rem;
+    flex-grow: 0.30;
+}
+
+section.seccion__productos article div.seccion__productos--descripcion p.discount {
+    font-size: var(--descuento);
+    color: var(--verde);
+    flex-grow: 0.70;
+
+}
+
+
+section.seccion__productos article div.seccion__productos--descripcion h5.description {
+    display: block;
+    font-size: var(--descripcion);
+    padding-top: 0.8rem;
+    color: var(--gris-oscuro);
+
+}
+
+/* ---------PRODUCT SECCION END--------- */
+
+/* ---------FOOTER STAR--------- */
+
+footer {
+    padding: 50px 10px 10px;
+    background-color: white;
+    color: var(--gris-oscuro)
+}
+
+footer article {
+    width: 90%;
+    text-align: center;
+    margin:0px auto;
+    padding-bottom: 40px;
+}
+
+footer article i {
+    font-size:  2em;
+    color: var(--celeste);
+    margin-bottom: 10px;
+}
+
+footer article p {
+    font-size: var(--parrafos);
+}
+
+footer span {
+    display: inline-block;
+    font-size: var(--parrafos);
+    text-align: center;
+    padding: 0px 0px 10px 5px;
+}
+
+
+/* ---------FOOTER END--------- */
+
+/* ---------MEDIA QUERY TABLET--------- */
+
+@media (min-width: 763px) {
+    /* ---------STAR HEADER--------- */ 
+
+    .main-header {
+        padding: 20px 29px;
+    }
+
+
+    .input-group {
+        min-width: 17rem;
+        height: 2.2rem;
+    }
+
+
+    .main-header-top-bar .input-group input {
+        max-width: none;
+        width: 100%;
+    }
+
+    .copy-header {
+        margin: 0;
+        font-size: 1.1rem;
+        max-width: 259.9px;
+        text-align: right;
+    }
+
+    .hambuerguer-button {
+        display: none;   
+    }
+
+
+    .main-header .main-header-top-bar {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+
+
+    .main-header-bottom-bar {
+        margin-top :1rem ;
+        display: flex;
+        justify-content: space-evenly;
+    }   
+    
+    .main-header-bottom-bar ul.left-navbar {
+        display: flex;
+        gap: 0.8rem;
+    }
+
+    .main-header-bottom-bar ul.rigth-navbar {
+        display: flex;
+        gap: 0.8rem;
+    }
+
+    .main-header-bottom-bar {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    /* ---------END HEADER--------- */
+
+    /* ---------STAR MAIN--------- */
+
+    main section.seccion__productos {
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 1.2rem;
+        flex-wrap: wrap;
+    }
+
+    main section.seccion__productos article {
+        max-width: 20rem;
+    }
+
+    section.seccion__productos article div.seccion__productos--descripcion h5.description {
+        display: block;
+    }
+
+    /* ---------STAR MAIN--------- */
+}
+
+/* ---------MEDIA QUERY DECTOKS--------- */
+
+@media (min-width: 1200px) {
+    /* ---------STAR HEADER--------- */ 
+    .main-header {
+        padding: 20px 82px;
+    }
+    /* ---------END HEADER--------- */ 
+
+    /* ---------STAR MAIN--------- */
+    main section.seccion__productos {
+        justify-content: none;
+        flex-wrap: nowrap;
+    }
+
+
+    section.seccion__productos article {
+        max-width: 16rem;
+    }
+
+    /* ---------END MAIN--------- */
+}
